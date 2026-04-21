@@ -47,6 +47,16 @@ export function HeroSection() {
             </div>
 
             <div className="space-y-4">
+              {/* Profile Image */}
+              <div className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden border-4 border-primary/30 shadow-lg shadow-primary/20">
+                <img
+                  src="/images/profile.jpeg"
+                  alt="Mohammed Wasim M"
+                  className="w-full h-full object-cover object-top"
+                />
+                <div className="absolute inset-0 rounded-full ring-2 ring-primary/50 ring-offset-2 ring-offset-background" />
+              </div>
+              
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
                 Mohammed{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">

@@ -34,9 +34,12 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
-            <div className="relative w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center text-primary-foreground font-bold text-lg overflow-hidden">
-              <span className="relative z-10">W</span>
-              <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+            <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-primary/30 group-hover:border-primary transition-colors duration-300">
+              <img
+                src="/images/profile.jpeg"
+                alt="Mohammed Wasim M"
+                className="w-full h-full object-cover object-top"
+              />
             </div>
             <span className="font-semibold text-foreground hidden sm:block">Portfolio</span>
           </a>
