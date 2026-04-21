@@ -48,18 +48,19 @@ export function HeroSection() {
 
             <div className="space-y-4">
               {/* Profile Image */}
-              <div className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden border-4 border-primary/30 shadow-lg shadow-primary/20">
+              <div className="group relative w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden border-4 border-primary/30 shadow-lg shadow-primary/20 cursor-pointer transition-all duration-500 hover:scale-110 hover:border-primary hover:shadow-xl hover:shadow-primary/40">
                 <img
                   src="/images/profile.jpeg"
                   alt="Mohammed Wasim M"
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 rounded-full ring-2 ring-primary/50 ring-offset-2 ring-offset-background" />
+                <div className="absolute inset-0 rounded-full ring-2 ring-primary/50 ring-offset-2 ring-offset-background transition-all duration-500 group-hover:ring-4 group-hover:ring-primary" />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
               
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                Mohammed{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight group cursor-default">
+                <span className="inline-block transition-all duration-300 hover:text-primary hover:scale-105 hover:drop-shadow-[0_0_15px_rgba(20,184,166,0.5)]">Mohammed</span>{" "}
+                <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent transition-all duration-300 hover:scale-105 hover:drop-shadow-[0_0_20px_rgba(20,184,166,0.6)]">
                   Wasim M
                 </span>
               </h1>
