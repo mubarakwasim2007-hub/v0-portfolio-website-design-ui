@@ -56,7 +56,13 @@ export function Navigation() {
                 {link.label}
               </a>
             ))}
-            <a href="#" className="ml-4">
+            {/* Desktop Resume Button */}
+            <a 
+              href="/resume-Mohammed-Wasim.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="ml-2"
+            >
               <Button size="sm" className="gap-2 bg-primary hover:bg-primary/90 text-primary-foreground">
                 <Download className="h-4 w-4" />
                 Resume
@@ -76,7 +82,7 @@ export function Navigation() {
         {/* Mobile Navigation */}
         <div
           className={`md:hidden overflow-hidden transition-all duration-300 ${
-            isMobileMenuOpen ? "max-h-64 pb-4" : "max-h-0"
+            isMobileMenuOpen ? "max-h-80 pb-4" : "max-h-0"
           }`}
         >
           <div className="flex flex-col gap-2 pt-2">
@@ -91,7 +97,14 @@ export function Navigation() {
                 {link.label}
               </a>
             ))}
-            <a href="#" className="mt-2">
+            {/* Mobile Resume Button */}
+            <a 
+              href="/resume-Mohammed-Wasim.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="mt-2 px-4"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               <Button className="w-full gap-2 bg-primary hover:bg-primary/90 text-primary-foreground">
                 <Download className="h-4 w-4" />
                 Download Resume
