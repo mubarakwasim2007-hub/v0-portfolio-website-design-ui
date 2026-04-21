@@ -36,7 +36,7 @@ export function Navigation() {
           <a href="#" className="flex items-center gap-3 group">
             <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-primary/30 group-hover:border-primary transition-colors duration-300">
               <img
-                src="/images/profile.jpeg"
+                src="./images/profile.jpeg"
                 alt="Mohammed Wasim M"
                 className="w-full h-full object-cover object-top"
               />
