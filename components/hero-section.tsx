@@ -50,7 +50,7 @@ export function HeroSection() {
               {/* Profile Image */}
               <div className="group relative w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden border-4 border-primary/30 shadow-lg shadow-primary/20 cursor-pointer transition-all duration-500 hover:scale-110 hover:border-primary hover:shadow-xl hover:shadow-primary/40">
                 <img
-                  src="/images/profile.jpeg"
+                  src="./images/profile.jpeg"
                   alt="Mohammed Wasim M"
                   className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
                 />
