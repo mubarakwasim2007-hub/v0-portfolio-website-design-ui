@@ -58,7 +58,7 @@ export function Navigation() {
             ))}
             {/* Desktop Resume Button */}
             <a 
-              href="/resume-Mohammed-Wasim.pdf" 
+              href="./resume-Mohammed-Wasim.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
               className="ml-2"
@@ -99,7 +99,7 @@ export function Navigation() {
             ))}
             {/* Mobile Resume Button */}
             <a 
-              href="/resume-Mohammed-Wasim.pdf" 
+              href="./resume-Mohammed-Wasim.pdf" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="mt-2 px-4"
