@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Download, User, FolderOpen, Mail } from "lucide-react";
+import { Menu, X, User, FolderOpen, Mail } from "lucide-react"; // Removed Download icon
 
 const navLinks = [
   { href: "#about", label: "About", icon: User },
@@ -56,18 +56,6 @@ export function Navigation() {
                 {link.label}
               </a>
             ))}
-            {/* Desktop Resume Button */}
-            <a 
-              href="./public/resume.png" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="ml-2"
-            >
-              <Button size="sm" className="gap-2 bg-primary hover:bg-primary/90 text-primary-foreground">
-                <Download className="h-4 w-4" />
-                Resume
-              </Button>
-            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -82,7 +70,7 @@ export function Navigation() {
         {/* Mobile Navigation */}
         <div
           className={`md:hidden overflow-hidden transition-all duration-300 ${
-            isMobileMenuOpen ? "max-h-80 pb-4" : "max-h-0"
+            isMobileMenuOpen ? "max-h-64 pb-4" : "max-h-0"
           }`}
         >
           <div className="flex flex-col gap-2 pt-2">
@@ -97,19 +85,6 @@ export function Navigation() {
                 {link.label}
               </a>
             ))}
-            {/* Mobile Resume Button */}
-            <a 
-              href="./public/resume.png" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="mt-2 px-4"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              <Button className="w-full gap-2 bg-primary hover:bg-primary/90 text-primary-foreground">
-                <Download className="h-4 w-4" />
-                Download Resume
-              </Button>
-            </a>
           </div>
         </div>
       </div>
